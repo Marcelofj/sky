@@ -1,0 +1,37 @@
+# Register user
+POST http://localhost:3000/sign-up
+Content-Type: application/json
+
+{
+    "name": "Marcelo Francisco",
+    "email": "marcelofj@gmail.com",
+    "password": "12345678",
+    "phones": 
+    [
+        {
+            "number": "994902925",
+            "ddd": "11"
+        },
+        {
+            "number": "25382263",
+            "ddd": "11"
+        }
+    ]
+}
+
+# Authenticate user
+###
+POST http://localhost:3000/sign-in
+Content-Type: application/json
+
+{
+    "email": "marcelofj@gmail.com",
+    "password": "12345678"
+}
+
+# Delete user
+###
+GET http://localhost:3000/search-user/6142d9a86c0f36f0480a77dd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDJkOWE4NmMwZjM2ZjA0ODBhNzdkZCIsImlhdCI6MTYzMTc3OTc1MSwiZXhwIjoxNjMxNzc5ODExfQ.VSBbA-by66lE2AW6FrYwwkdAQkKkLqArBzL2pJqK39g
+
