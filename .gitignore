@@ -1,4 +1,4 @@
 /config/dev.env
-/config/test.env
+/config/prod.env
 /node_modules
 .vscode/
