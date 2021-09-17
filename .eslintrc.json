@@ -11,5 +11,8 @@
         "ecmaVersion": 12
     },
     "rules": {
+        "semi": 0,
+        "indent": ["error", 4],
+        "allowSingleLine": false 
     }
 }

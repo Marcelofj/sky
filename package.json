@@ -1,26 +1,22 @@
 {
-  "name": "node-test",
+  "name": "sky",
   "version": "1.0.0",
-  "description": "Just my node.js experiences",
+  "description": "Test for SKY Company",
   "main": "server.js",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "scripts": {
-    "dev": "NODE_ENV=dev nodemon ./src/server.js",
-    "test": "NODE_ENV=test jest --detectOpenHandles",
-    "test:watch": "NODE_ENV=test jest --detectOpenHandles --watchAll"
+    "start": "NODE_ENV=prod node ./src/server.js",
+    "dev": "NODE_ENV=dev nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marcelofj/node-test.git"
+    "url": "git+https://github.com/Marcelofj/sky.git"
   },
   "author": "Marcelo Francisco",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marcelofj/node-test/issues"
+    "url": "https://github.com/Marcelofj/sky/issues"
   },
-  "homepage": "https://github.com/Marcelofj/node-test#readme",
+  "homepage": "https://github.com/Marcelofj/sky#readme",
   "dependencies": {
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.2",
@@ -34,8 +30,6 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.24.2",
-    "jest": "^27.0.6",
-    "supertest": "^6.1.6"
+    "eslint-plugin-import": "^2.24.2"
   }
 }
